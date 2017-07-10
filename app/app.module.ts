@@ -12,6 +12,7 @@ import{ ContentChildComponent } from './content-child.component';
 import{ContContComponent} from './cont.cont.component';
 import{TestComponent} from './test.component';
 import {BoldDirective} from './bold.directive';
+import{HostMostDirective} from './host.most.directive';
 
 // @NgModule - декоратор, который определяет данные для создаваемого модуля.
 // Для того чтобы приложение могло выполняться в браузере, текущий модуль (корневой модуль)
@@ -26,7 +27,8 @@ import {BoldDirective} from './bold.directive';
                   ContentChildComponent,
                   ContContComponent,
                   TestComponent,
-                  BoldDirective 
+                  BoldDirective,
+                  HostMostDirective 
                 ], // корневой компонент данного приложения
   bootstrap:    [ AppComponent ]  // компонент с которого начинается отображение приложения
 })

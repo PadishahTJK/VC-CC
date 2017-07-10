@@ -1,10 +1,10 @@
-import {Component,Directive,HostListener,HostBinding} from '@angular/core';
+import {Directive,HostListener,HostBinding} from '@angular/core';
 
-@Component({
+@Directive({
   selector:'[.c_highlight]'
 })
 
-export class HostMostComponent{
+export class HostMostDirective{
    @HostBinding('style.backgroundColor') c_color ="red";
 
    @HostListener('mouseenter') c_onEnter(){

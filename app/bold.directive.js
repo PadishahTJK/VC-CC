@@ -1,4 +1,5 @@
 "use strict";
+// import {Directive,ElementRef,Renderer} from "@angular/core";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9,24 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// @Directive({
+//     selector:'[bol]',
+// })
+// export class BoldDirective{
+//     //  constructor(private  elementRef: ElementRef){
+//     //      this.elementRef.nativeElement.style.fontWeight ="bold";
+//     //  }//Constructor
+// constructor(private elementRef: ElementRef, private renderer: Renderer){
+// this.renderer.setElementAttribute(this.elementRef.nativeElement, "font-weight", "bold");
+//     }
+// }// Bold Directive
 var core_1 = require("@angular/core");
 var BoldDirective = (function () {
-    //  constructor(private  elementRef: ElementRef){
-    //      this.elementRef.nativeElement.style.fontWeight ="bold";
-    //  }//Constructor
-    function BoldDirective(elementRef, renderer) {
+    function BoldDirective(elementRef) {
         this.elementRef = elementRef;
-        this.renderer = renderer;
-        this.renderer.setElementAttribute(this.elementRef.nativeElement, "font-weight", "bold");
+        this.elementRef.nativeElement.style.fontWeight = "bold";
     }
     return BoldDirective;
-}()); // Bold Directive
+}());
 BoldDirective = __decorate([
-    core_1.Component({
-        selector: 'bol',
-        template: ''
+    core_1.Directive({
+        selector: '[bold]'
     }),
-    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer])
+    __metadata("design:paramtypes", [core_1.ElementRef])
 ], BoldDirective);
 exports.BoldDirective = BoldDirective;
 //# sourceMappingURL=bold.directive.js.map
