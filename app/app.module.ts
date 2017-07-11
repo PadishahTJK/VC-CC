@@ -13,6 +13,9 @@ import{ContContComponent} from './cont.cont.component';
 import{TestComponent} from './test.component';
 import {BoldDirective} from './bold.directive';
 import{HostMostDirective} from './host.most.directive';
+import {TestDirective } from './test.directive';
+
+import{HostDirective} from './host.directive';
 
 // @NgModule - декоратор, который определяет данные для создаваемого модуля.
 // Для того чтобы приложение могло выполняться в браузере, текущий модуль (корневой модуль)
@@ -28,7 +31,9 @@ import{HostMostDirective} from './host.most.directive';
                   ContContComponent,
                   TestComponent,
                   BoldDirective,
-                  HostMostDirective 
+                  HostMostDirective,
+                  TestDirective,
+                  HostDirective 
                 ], // корневой компонент данного приложения
   bootstrap:    [ AppComponent ]  // компонент с которого начинается отображение приложения
 })

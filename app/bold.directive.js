@@ -21,11 +21,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // this.renderer.setElementAttribute(this.elementRef.nativeElement, "font-weight", "bold");
 //     }
 // }// Bold Directive
+// import {Directive, ElementRef} from '@angular/core';
+// @Directive({
+//     selector: '[bold]'
+// })
+// export class BoldDirective{
+//     constructor(private elementRef: ElementRef){
+//         this.elementRef.nativeElement.style.fontWeight = "bold";
+//     }
+// }
+// Rendering
 var core_1 = require("@angular/core");
 var BoldDirective = (function () {
-    function BoldDirective(elementRef) {
+    function BoldDirective(elementRef, renderer) {
         this.elementRef = elementRef;
-        this.elementRef.nativeElement.style.fontWeight = "bold";
+        this.renderer = renderer;
+        this.renderer.setElementAttribute(this.elementRef.nativeElement, "font-weight", "bold");
     }
     return BoldDirective;
 }());
@@ -33,7 +44,7 @@ BoldDirective = __decorate([
     core_1.Directive({
         selector: '[bold]'
     }),
-    __metadata("design:paramtypes", [core_1.ElementRef])
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer])
 ], BoldDirective);
 exports.BoldDirective = BoldDirective;
 //# sourceMappingURL=bold.directive.js.map

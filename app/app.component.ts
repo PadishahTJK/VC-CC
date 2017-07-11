@@ -25,6 +25,7 @@ import {BoldDirective} from './bold.directive';
 @Component({
    selector: 'my-app',
    template:`
+     <p class="testHighlight"> Testing Area </p>
      <legend>
      <label>Enter Your Name:</label>
      <input [(ngModel)]="name"  placeholder="Your Name" >
@@ -80,6 +81,11 @@ import {BoldDirective} from './bold.directive';
            <p bold> Testing BoldDirective</p>
 
            <p class="c_highlight"> Some text</p>
+
+           <br />
+           <p italic>Foooter Text let say so ...</p>
+
+           
              
             `,
             styles:[`.pervoePravilo{color:red;fontSize:15px;}

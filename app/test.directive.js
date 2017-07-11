@@ -10,38 +10,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var HostMostComponent = (function () {
-    function HostMostComponent() {
-        this.c_color = "red";
+var TestDirective = (function () {
+    function TestDirective() {
+        this.fS = "15px";
     }
-    HostMostComponent.prototype.c_onEnter = function () {
-        this.c_color = "blue";
+    TestDirective.prototype.fc_onEnter = function () {
+        this.fS = "35px";
     };
-    HostMostComponent.prototype.c_onLeave = function () {
-        this.c_color = "yellow";
+    TestDirective.prototype.fc_onLeave = function () {
+        this.fS = "25px";
     };
-    return HostMostComponent;
+    return TestDirective;
 }());
 __decorate([
-    core_1.HostBinding('style.backgroundColor'),
+    core_1.HostBinding('style.fontSize'),
     __metadata("design:type", Object)
-], HostMostComponent.prototype, "c_color", void 0);
+], TestDirective.prototype, "fS", void 0);
 __decorate([
     core_1.HostListener('mouseenter'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
-], HostMostComponent.prototype, "c_onEnter", null);
+], TestDirective.prototype, "fc_onEnter", null);
 __decorate([
     core_1.HostListener('mouseleave'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
-], HostMostComponent.prototype, "c_onLeave", null);
-HostMostComponent = __decorate([
-    core_1.Component({
-        selector: '[.c_highlight]'
+], TestDirective.prototype, "fc_onLeave", null);
+TestDirective = __decorate([
+    core_1.Directive({
+        selector: '[.testHighlight]'
     })
-], HostMostComponent);
-exports.HostMostComponent = HostMostComponent;
-//# sourceMappingURL=host.most.component.js.map
+], TestDirective);
+exports.TestDirective = TestDirective;
+//# sourceMappingURL=test.directive.js.map
