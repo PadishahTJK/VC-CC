@@ -84,7 +84,10 @@ import {BoldDirective} from './bold.directive';
 
            <br />
            <p italic>Foooter Text let say so ...</p>
-
+<br /><br />
+<p my-highlight>Testing my HighLight </p>
+<br />
+<div upd-highL>Updated  Version  of Highlight</div>
            
              
             `,

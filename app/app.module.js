@@ -21,6 +21,8 @@ var bold_directive_1 = require("./bold.directive");
 var host_most_directive_1 = require("./host.most.directive");
 var test_directive_1 = require("./test.directive");
 var host_directive_1 = require("./host.directive");
+var highlight_directive_1 = require("./highlight.directive");
+var update_highlight_1 = require("./update.highlight");
 // @NgModule - декоратор, который определяет данные для создаваемого модуля.
 // Для того чтобы приложение могло выполняться в браузере, текущий модуль (корневой модуль)
 // должен выполнить импорт модуля BrowserModule взятого из @angular/platform-browser 
@@ -43,7 +45,9 @@ AppModule = __decorate([
             bold_directive_1.BoldDirective,
             host_most_directive_1.HostMostDirective,
             test_directive_1.TestDirective,
-            host_directive_1.HostDirective
+            host_directive_1.HostDirective,
+            highlight_directive_1.HighlightDirective,
+            update_highlight_1.UpdateHighlight
         ],
         bootstrap: [app_component_1.AppComponent] // компонент с которого начинается отображение приложения
     })
