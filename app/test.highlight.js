@@ -10,33 +10,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var UpdateHighlight = (function () {
-    //Constructor
-    function UpdateHighlight(el) {
+var TestHighlight = (function () {
+    function TestHighlight(el) {
         this.el = el;
     }
-    UpdateHighlight.prototype.onMouseEnter = function () {
-        this.setUpdateHighLight('cyan');
-        //    console.log("Mouse Enter");
+    TestHighlight.prototype.OnMouseEnter = function () {
+        console.log("Test");
+        this.setEv('red');
     };
-    UpdateHighlight.prototype.onMouseLeave = function () {
-        this.setUpdateHighLight('purple');
-        //  console.log(" Mouse Leave");
+    TestHighlight.prototype.OnMouseLeave = function () {
+        this.setEv('blue');
+        console.log("LeaveTest");
     };
-    UpdateHighlight.prototype.setUpdateHighLight = function (color) {
-        this.el.nativeElement.style.backgroundColor = color;
-    };
-    return UpdateHighlight;
+    TestHighlight.prototype.setEv = function (val) {
+        this.el.nativeElement.style.backgroundColor = val;
+    }; //setEv()
+    return TestHighlight;
 }());
-UpdateHighlight = __decorate([
+TestHighlight = __decorate([
     core_1.Directive({
-        selector: '[upd-highL]',
+        selector: '[test-h]',
         host: {
-            '(mouseenter)': 'onMouseEnter()',
-            '(mouseleave)': 'onMouseLeave()'
+            '(mouseenter)': 'OnMouseEnter()',
+            '(mouseleave)': 'OnMouseLeave()'
         }
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
-], UpdateHighlight);
-exports.UpdateHighlight = UpdateHighlight;
-//# sourceMappingURL=update.highlight.js.map
+], TestHighlight);
+exports.TestHighlight = TestHighlight;
+//# sourceMappingURL=test.highlight.js.map

@@ -75,19 +75,18 @@ import {BoldDirective} from './bold.directive';
   <h4 [ngClass]="{pervoePravilo:true}">All rights reserved</h4>
   <p [ngClass]="{segoePrintFont:true}">For more Information..</p>
   <h6 [ngStyle]="{'fontSize':'10px','font-family':'Segoe Print'}">Testing Style</h6>
-
   <h6 [style.fontSize]=" '10px' " [style.fontFamily]=" 'Segoe Print' "> Alternative</h6>
           
-           <p bold> Testing BoldDirective</p>
-
-           <p class="c_highlight"> Some text</p>
-
-           <br />
-           <p italic>Foooter Text let say so ...</p>
+    <p bold> Testing BoldDirective</p>
+    <p class="c_highlight"> Some text</p>
+    <br />
+    <p italic>Foooter Text let say so ...</p>
 <br /><br />
-<p my-highlight>Testing my HighLight </p>
-<br />
-<div upd-highL>Updated  Version  of Highlight</div>
+  <p my-highlight>Testing my HighLight </p>
+  <br />
+  <div upd-highL>Updated  Version  of Highlight</div>
+  <br />
+  <div test-h>Testing  Highlight</div>
            
              
             `,

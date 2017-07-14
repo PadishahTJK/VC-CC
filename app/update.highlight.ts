@@ -13,17 +13,15 @@ export class UpdateHighlight{
  
  //Constructor
 
- constructor( private el:ElementRef){
-
- }
+ constructor( private el:ElementRef){}
    onMouseEnter(){
        this.setUpdateHighLight('cyan');
-       console.log("Mouse Enter");
+    //    console.log("Mouse Enter");
 
    }
    onMouseLeave(){
      this.setUpdateHighLight('purple');
-     console.log(" Mouse Leave");
+    //  console.log(" Mouse Leave");
    }
 
 

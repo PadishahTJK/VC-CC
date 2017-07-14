@@ -18,6 +18,7 @@ import {TestDirective } from './test.directive';
 import{HostDirective} from './host.directive';
 import {HighlightDirective} from './highlight.directive';
 import{UpdateHighlight} from './update.highlight';
+import{TestHighlight} from './test.highlight';
 
 // @NgModule - декоратор, который определяет данные для создаваемого модуля.
 // Для того чтобы приложение могло выполняться в браузере, текущий модуль (корневой модуль)
@@ -37,7 +38,8 @@ import{UpdateHighlight} from './update.highlight';
                   TestDirective,
                   HostDirective,
                   HighlightDirective,
-                  UpdateHighlight 
+                  UpdateHighlight,
+                  TestHighlight 
                 ], // корневой компонент данного приложения
   bootstrap:    [ AppComponent ]  // компонент с которого начинается отображение приложения
 })
