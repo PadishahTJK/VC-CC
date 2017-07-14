@@ -25,6 +25,10 @@ import {BoldDirective} from './bold.directive';
 @Component({
    selector: 'my-app',
    template:`
+    	
+
+   <br/><br />
+     <br />
      <p class="testHighlight"> Testing Area </p>
      <legend>
      <label>Enter Your Name:</label>
@@ -87,8 +91,24 @@ import {BoldDirective} from './bold.directive';
   <div upd-highL>Updated  Version  of Highlight</div>
   <br />
   <div test-h>Testing  Highlight</div>
-           
-             
+    <br />
+<div>
+Rendering in Angular 2 means  how the framework decides to draw/print/display the application
+</div>
+<p> almost 100 % time this means  that the application  wiil be rendered in the DOM </p>   
+    <br/>
+    <p last-host>Input allows  data  to flow  from Binding  expression into Directive </p>
+<br />
+<p input-bold  >Hello Angular 2</p> 
+      <br /><br/><br /><br/><br /><br/><br /><br/>
+    <div [test-bold]=" '35px' " [defaultSize]="'14px'">Poluchenie Parametrov v Direktivah</div>
+      <br /><br/>   
+      <p in-hs>Here is Host</p>  
+
+      <br />
+      <ifC></ifC> 
+      <br /><br />
+      <forC></forC>
             `,
             styles:[`.pervoePravilo{color:red;fontSize:15px;}
                      .invisible{display:none;}
